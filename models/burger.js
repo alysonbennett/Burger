@@ -1,11 +1,11 @@
 var orm = require("../config/orm.js");
 
 
-CRUD
+// CRUD
 
 
 
 
 
 
-module.exports = burger;
+// module.exports = burger;
