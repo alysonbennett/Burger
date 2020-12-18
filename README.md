@@ -29,9 +29,11 @@ To use this application, first fork and open the repo onto your local machine. B
 
 ![npm install](public/assets/images/npmInstall.png)
 
-Now, while in the repo, type ```node index.js``` to start the app. Then, fill in your answers to the questions that are prompted.
+Now, while in the repo, type ```node server.js``` to start the app. 
 
-![node index.js](assets/node.png)
+![node index.js](public/assets/images/nodeServer.png)
+
+You can now access the app by going to ```localhost:8080``` in your web browser.
 
 ![]()
 
