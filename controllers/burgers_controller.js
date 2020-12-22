@@ -3,8 +3,6 @@ const router = require('express').Router();
 // Import the model to use the database functions
 var burger = require("../models/burger.js");
 
-
-
 router.post("/burgers", function (req, res) {
     burger.insertOne([
         "burger_name", "devoured"

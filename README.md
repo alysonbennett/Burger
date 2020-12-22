@@ -17,7 +17,7 @@ To try out the app, please visit this [Heroku Link](https://pacific-brushlands-2
 
 ## Installation
 
-To successfully run this application, please do a npm install upon downloading the repo in your terminal.
+To successfully run this application from GitHub, please do a npm install upon downloading the repo in your terminal.
 
 ```bash
 npm install
@@ -65,9 +65,7 @@ There has not been a test script written for this application yet.
 
 ## Issues
 
-Due to time constraints, this application is still under development.
-
-Moving forward, work needs to be done on the handlebars to correctly show the burgers available and the burgers that have been devoured. Also, the CSS file needs to be filled in to have a more polished looking site. 
+This application is still under development. Moving forward, the CSS file needs to be worked on to make this application look more like a professional page.  
 
 ## Questions
 
