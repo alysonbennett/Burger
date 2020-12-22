@@ -4,6 +4,8 @@
 
 Eating Burgers in Paradise is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will display the burger on the left side of the page. Each burger in the waiting area has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page. The app will store every burger in a database, whether devoured or not, so the user can track what types of burgers they've eaten.
 
+To try out the app, please visit this ![Heroku Link](https://pacific-brushlands-20984.herokuapp.com/)
+
 ## Table of Contents
 
 * [Installation](#Installation)
@@ -25,7 +27,9 @@ This application comes with seed data to get the user started in the database. Y
 
 ## Usage
 
-To use this application, first fork and open the repo onto your local machine. Before attempting to use the app, open your terminal and perform a ```npm install``` to get the necessary packages.
+If accessing this app from the Heroku link, you do not need to install anything to get started! 
+
+To use this application from GitHub, first fork and open the repo onto your local machine. Before attempting to use the app, open your terminal and perform a ```npm install``` to get the necessary packages.
 
 ![npm install](public/assets/images/npmInstall.png)
 
