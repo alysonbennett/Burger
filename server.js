@@ -7,7 +7,7 @@ var PORT = process.env.PORT || 8080;
 app.use(express.static("public"));
 
 //Sets up Express to handle data parsing
-app.use(express.urlencoded({ extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //Set Handlebars
@@ -17,9 +17,7 @@ app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 // Import routes and give server access to them
-var routes = require("./controllers/burgers_controller");
-
-app.use(routes)
+app.use(require("./controllers"))
 
 // Tell server to listen on PORT 8080
 app.listen(PORT, function () {

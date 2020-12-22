@@ -1,0 +1,10 @@
+<div class="input-group">
+    <span class="form-control">{{id}}. {{burger_name}}</span>
+    <div class="input-group-append">
+        <form action="/api/burgers/{{id}}" method="POST">
+            <input type="hidden" name="devoured" value="{{#if devoured}}0{{else}}1{{/if}}">
+            <input type="submit" value="{{#if devoured}}Order{{else}}Eat{{/if}}"
+                class="btn btn-{{#if devoured}}danger{{else}}success{{/if}}">
+        </form>
+    </div>
+</div>

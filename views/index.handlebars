@@ -1,52 +1,29 @@
 <h1>Eatin Burgers in Paradise</h1>
-<div class="row">
-    
 
-        <div class="col-md-6">
+<div class="container">
+    <div class="row">
+
+        <div class="col-6">
             <h4>Lets Eat!</h4>
-
             {{#each burgers}}
             {{#unless devoured}}
-            <form action="burger/eat/{{id}}" method="POST">
-                <div class="input-group">
-                    <li class="form-control">{{id}}. {{burger_name}}</li>
-                    <span class="input-group-btn">
-                        <button class="btn btn-success devour-button" type="submit">Devour It!</button>
-                    </span>
-                </div>
-            </form>
+            {{>burger}}
             {{/unless}}
             {{/each}}
-
         </div>
 
-        <div class="col-md-6">
+        <div class="col-6">
             <h4>Already eaten!</h4>
-
             {{#each burgers}}
-            {{#if this.devoured}}
-            <div class="input-group">
-                <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
-                <span class="input-group-btn">
-                </span>
-            </div>
+            {{#if devoured}}
+            {{>burger}}
             {{/if}}
             {{/each}}
-
-            <h4>Add a Burger!</h4>
-            <div>
-                <div class="input-group">
-                    <div class="input-group">
-                        <span class="input-group-text"></span>
-                    </div>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                    <button class="btn btn-warning devour-button" type="submit">Submit!</button>
-
-                </div>
-
-
-            </div>
-
         </div>
 
+        <div class="col-12">
+            {{>new_burger}}
+        </div>
+
+    </div>
 </div>
